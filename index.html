@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Stock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Car Stock</h1>
+    <form id="add-car-form">
+      <div class="form-group">
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" required>
+      </div>
+      <div class="form-group">
+        <label for="model">Model:</label>
+        <input type="text" id="model" required>
+      </div>
+      <div class="form-group">
+        <label for="an">Anul:</label>
+        <input type="number" id="an" required>
+      </div>
+      <div>
+        <label for="culoare">Culoare:</label>
+        <input type="text" id="culoare">
+      </div>
+      <button type="submit">Add Car</button>
+      <button id="delete-all">Sterge tot</button>
+    </form>
+    <ul id="lista-masini"></ul>
+    <button id="undo">Sterge</button>
+    <button id="redo">Repetare</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
